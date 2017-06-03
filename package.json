@@ -1,0 +1,33 @@
+{
+  "name": "gilded-rose-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Dan Andersson <dan.andersson@chimpiq.com> (https://chimpiq.com/)",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --require babel-polyfill --compilers js:babel-register --reporter spec \"src/**/*.test.js\"",
+    "test:watch": "npm run test -- --watch",
+    "coverage": "nyc --reporter html --reporter text npm run test",
+    "coverage:watch": "nodemon --quiet --watch src --exec npm run coverage -s",
+    "coverage:check": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "coverage:report": "nyc report --reporter text-lcov | coveralls",
+    "lint": "node_modules/.bin/esw src",
+    "lint:watch": "npm run lint -- --watch",
+    "start": "npm-run-all --parallel lint:watch test:watch"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-register": "^6.24.1",
+    "coveralls": "^2.13.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-watch": "^3.1.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.4.1",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "nyc": "^11.0.2"
+  }
+}
