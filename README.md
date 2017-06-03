@@ -20,3 +20,7 @@ Testing
 Linting
 - Run `yarn lint` or `npm run lint` in the terminal to run linting once
 - Run `yarn lint:watch` or `npm run lint:watch` in the terminal to run linting on changes in the src directory
+
+Coverage
+- Run `yarn coverage` or `npm run coverage` in the terminal to run test coverage once
+- Run `yarn coverage:check` or `npm run coverage:check` in the terminal to run test coverage check once
