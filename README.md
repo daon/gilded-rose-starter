@@ -4,6 +4,9 @@ Starter project for [Gilded Rose kata](https://github.com/NotMyself/GildedRose)
 ## Prerequisites
 - [Node](https://nodejs.org/en/download/)
 
+[![Build Status](https://travis-ci.org/daon/gilded-rose-starter.svg?branch=master)](https://travis-ci.org/daon/gilded-rose-starter)
+[![Coverage Status](https://coveralls.io/repos/github/daon/gilded-rose-starter/badge.svg?branch=master)](https://coveralls.io/github/daon/gilded-rose-starter?branch=master)
+
 ## Optional
 - [Yarn](https://yarnpkg.com/lang/en/docs/install/)
 - [VSCode](https://code.visualstudio.com/)
